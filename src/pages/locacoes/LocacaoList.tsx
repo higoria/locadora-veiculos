@@ -51,10 +51,10 @@ export function LocacaoList() {
         'text-bg-primary' : r.status === 'FINALIZADA' ? 'text-bg-success' : 'text-bg-secondary'}`}>{r.status}</span> },
       { title: 'Total', render: (r) => currency(r.valorTotal) },
     ]} extraAction={{ label:'Detalhes', onClick:(r) => navigate(`/locacoes/${r.id}`) }}
-      onDelete={setCancel} canDelete={(r) => r.status === 'ABERTA'}
+      onDelete={setCancel} canDelete={(r) => r.status === 'ABERTA'} deleteLabel="Cancelar"
       emptyMessage="Nenhuma locação corresponde aos filtros." /></Card></div>
     <Modal show={cancel !== null} title="Cancelar locação" message="Deseja cancelar esta locação aberta?"
       onClose={() => setCancel(null)} onConfirm={() => { void cancelRental(); }} />
-    <p className="small text-muted mt-3">A ação Excluir cancela apenas locações abertas; o histórico permanece preservado.</p>
+    <p className="small text-muted mt-3">O cancelamento preserva o histórico da locação.</p>
   </div>;
 }
