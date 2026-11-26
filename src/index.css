@@ -1,0 +1,16 @@
+:root { font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; color: #172b43; background: #f3f6fa; }
+body { margin: 0; min-width: 320px; background: #f3f6fa; }
+main { min-height: calc(100vh - 215px); }
+.site-header { background: linear-gradient(120deg, #102e4d, #134a70); box-shadow: 0 5px 18px #102e4d18; }
+.brand { color: white; font-weight: 800; font-size: 1.55rem; letter-spacing: -.03em; }
+.nav-pill { color: #d7e8f3; text-decoration: none; border: 1px solid #ffffff2a; padding: .43rem .75rem; border-radius: 999px; font-size: .9rem; }
+.nav-pill:hover, .nav-pill.active { color: #102e4d; background: white; border-color: white; }
+.eyebrow { font-size: .72rem; letter-spacing: .15em; font-weight: 800; color: #2874a2; }
+.hero { background: linear-gradient(120deg, #153b60, #236f92); border-radius: 1rem; color: white; }
+.card { border-radius: .9rem; }
+.table th { font-size: .81rem; color: #476074; white-space: nowrap; }
+.table td { font-size: .91rem; }
+.btn { font-weight: 600; }
+.modal-backdrop-custom { position: fixed; inset: 0; z-index: 1050; background: #0d2435aa; display: flex; align-items: center; justify-content: center; padding: 1rem; }
+.modal-backdrop-custom .modal-dialog { width: min(100%, 480px); margin: 0; }
+@media (max-width: 600px) { .nav-pill { font-size: .8rem; padding: .38rem .55rem; } .hero { border-radius: .6rem; } }
