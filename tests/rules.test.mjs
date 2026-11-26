@@ -31,7 +31,7 @@ test('RN04: KM de devolução nunca diminui', () => {
 
 test('RF04 e RF06: placa, chassi, CPF e CNH sem duplicatas', () => {
   assert.throws(() => assertUnique(db.veiculos, {...db.veiculos[2],id:'outro',placa:'ABC1D23'}, ['placa','chassi'], 'Veículo'));
-  assert.throws(() => assertUnique(db.clientes, {...db.clientes[2],id:'outro',cpf:'12345678901'}, ['cpf','cnh'], 'Cliente'));
+  assert.throws(() => assertUnique(db.clientes, {...db.clientes[2],id:'outro',cpf:db.clientes[0].cpf}, ['cpf','cnh'], 'Cliente'));
 });
 
 test('RN05 e RN06: nota somente ao finalizar e exclusão bloqueada por dependentes', () => {

@@ -22,24 +22,6 @@ npm run dev
 
 Abra o endereço informado pelo Vite, normalmente `http://localhost:5173`. A API funciona em `http://localhost:3001`. Também é possível definir `VITE_API_URL` para outro endereço da API. Execute `npm run build` para verificar a tipagem e gerar a versão de produção.
 
-## Telas
-
-### Painel
-
-![Painel com indicadores e locações abertas](docs/screenshots/01-painel.png)
-
-### Veículos
-
-![Frota com situação disponível, locada e em manutenção](docs/screenshots/02-veiculos.png)
-
-### Locações
-
-![Lista de locações com filtros por cliente e status](docs/screenshots/03-locacoes.png)
-
-### Detalhes
-
-![Locação com contrato, vistorias, pagamentos e nota fiscal](docs/screenshots/04-detalhes.png)
-
 ## Organização
 
 ```text
