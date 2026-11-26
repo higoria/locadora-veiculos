@@ -1,0 +1,52 @@
+{
+  "marcas": [
+    { "id": "m1", "nome": "Volkswagen" },
+    { "id": "m2", "nome": "Toyota" },
+    { "id": "m3", "nome": "Chevrolet" }
+  ],
+  "categorias": [
+    { "id": "cat1", "nome": "Econômico", "valorLocacao": 120 },
+    { "id": "cat2", "nome": "Intermediário", "valorLocacao": 190 },
+    { "id": "cat3", "nome": "SUV", "valorLocacao": 290 }
+  ],
+  "modelos": [
+    { "id": "mod1", "nome": "Polo", "ano": 2025, "marcaId": "m1", "categoriaId": "cat1" },
+    { "id": "mod2", "nome": "Corolla", "ano": 2024, "marcaId": "m2", "categoriaId": "cat2" },
+    { "id": "mod3", "nome": "Tracker", "ano": 2025, "marcaId": "m3", "categoriaId": "cat3" }
+  ],
+  "veiculos": [
+    { "id": "v1", "chassi": "9BWZZZ377VT004251", "placa": "ABC1D23", "anoFabricacao": 2025, "cor": "Prata", "kmRodado": 15200, "modeloId": "mod1" },
+    { "id": "v2", "chassi": "9BRBD48E3E2621034", "placa": "DEF4G56", "anoFabricacao": 2024, "cor": "Branco", "kmRodado": 27840, "modeloId": "mod2" },
+    { "id": "v3", "chassi": "9BGKC69V0GG186013", "placa": "GHI7J89", "anoFabricacao": 2025, "cor": "Azul", "kmRodado": 8900, "modeloId": "mod3" },
+    { "id": "v4", "chassi": "9BWZZZ377VT004252", "placa": "JKL2M34", "anoFabricacao": 2025, "cor": "Preto", "kmRodado": 22100, "modeloId": "mod1" }
+  ],
+  "manutencoes": [
+    { "id": "man1", "data": "2026-11-24", "descricao": "Revisão dos freios", "valor": 480, "status": "EM_ANDAMENTO", "veiculoId": "v4" },
+    { "id": "man2", "data": "2026-10-10", "descricao": "Troca de óleo", "valor": 235, "status": "CONCLUIDA", "veiculoId": "v1" }
+  ],
+  "clientes": [
+    { "id": "c1", "nome": "Cliente Exemplo 1", "cpf": "00000000001", "cnh": "EXEMPLO-CNH-1", "validadeCnh": "2030-01-30", "telefone": "00000000001", "email": "cliente1@example.invalid", "endereco": "Endereço fictício 1" },
+    { "id": "c2", "nome": "Cliente Exemplo 2", "cpf": "00000000002", "cnh": "EXEMPLO-CNH-2", "validadeCnh": "2028-06-15", "telefone": "00000000002", "email": "cliente2@example.invalid", "endereco": "Endereço fictício 2" },
+    { "id": "c3", "nome": "Cliente Exemplo 3", "cpf": "00000000003", "cnh": "EXEMPLO-CNH-3", "validadeCnh": "2027-09-01", "telefone": "00000000003", "email": "cliente3@example.invalid", "endereco": "Endereço fictício 3" }
+  ],
+  "locacoes": [
+    { "id": "loc1", "dataRetirada": "2026-11-24T09:00", "dataDevolucaoPrevista": "2026-11-28T09:00", "kmRetirada": 27840, "valorTotal": 760, "status": "ABERTA", "clienteId": "c1", "veiculoId": "v2" },
+    { "id": "loc2", "dataRetirada": "2026-11-15T10:00", "dataDevolucaoPrevista": "2026-11-18T10:00", "dataDevolucaoReal": "2026-11-18T09:00", "kmRetirada": 15000, "kmDevolucao": 15200, "valorTotal": 360, "status": "FINALIZADA", "clienteId": "c2", "veiculoId": "v1" }
+  ],
+  "contratos": [
+    { "id": "ctr1", "numero": "CTR-2026-001", "dataEmissao": "2026-11-24", "termos": "Locação de Corolla. Diária de R$ 190,00.", "locacaoId": "loc1" },
+    { "id": "ctr2", "numero": "CTR-2026-002", "dataEmissao": "2026-11-15", "termos": "Locação de Polo. Diária de R$ 120,00.", "locacaoId": "loc2" }
+  ],
+  "vistorias": [
+    { "id": "vis1", "tipo": "RETIRADA", "data": "2026-11-24T09:00", "km": 27840, "nivelCombustivel": "CHEIO", "observacoes": "Sem avarias", "locacaoId": "loc1" },
+    { "id": "vis2", "tipo": "RETIRADA", "data": "2026-11-15T10:00", "km": 15000, "nivelCombustivel": "CHEIO", "observacoes": "Sem avarias", "locacaoId": "loc2" },
+    { "id": "vis3", "tipo": "DEVOLUCAO", "data": "2026-11-18T09:00", "km": 15200, "nivelCombustivel": "3/4", "observacoes": "Limpo", "locacaoId": "loc2" }
+  ],
+  "pagamentos": [
+    { "id": "pag1", "data": "2026-11-24", "valor": 200, "forma": "PIX", "status": "PAGO", "locacaoId": "loc1" },
+    { "id": "pag2", "data": "2026-11-18", "valor": 360, "forma": "CARTAO", "status": "PAGO", "locacaoId": "loc2" }
+  ],
+  "notasFiscais": [
+    { "id": "nf1", "numero": "NF-2026-001", "serie": "1", "dataEmissao": "2026-11-18", "valor": 360, "locacaoId": "loc2" }
+  ]
+}
