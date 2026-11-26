@@ -1,7 +1,6 @@
 # LocaFrota - sistema de locação de veículos
 
-**Aluno:** Higor (sobrenome a informar)  
-**Disciplina:** laboratório de desenvolvimento web  
+**Aluno:** Higor Souza  
 **Tecnologias:** React, TypeScript, Vite, React Router, Bootstrap, Fetch API e JSON Server.
 
 Aplicação para administrar cadastros de marcas, categorias, modelos, veículos, manutenções e clientes. Também gerencia a abertura e a devolução de locações, contrato, vistorias, pagamentos e nota fiscal simulada. A API REST de demonstração usa as 11 coleções do `db.json`.
